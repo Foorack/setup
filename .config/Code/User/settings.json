@@ -1,44 +1,57 @@
 {
   "editor.inlineSuggest.enabled": true,
   "editor.formatOnSave": true,
-
-  "github.copilot.enable": {
-    "*": true
-    // "yaml": true,
-    // "plaintext": true,
-    // "markdown": true,
-    // "typescript": true
-  },
-  "github.copilot.chat.agent.terminal.allowList": [
-    "cd",
-    "ls",
-    "pwd",
-    "cat",
-    "less",
-    "tail",
-    "head",
-    "grep",
-    "find",
-    "man",
-    "echo",
-    "whoami",
-    "uname",
-    "date",
-    "git status",
-    "git log",
-    "git diff",
-    "git checkout",
-    "git branch --show-current",
-    "git show",
-    "mkdir"
-  ],
-  "chat.commandCenter.enabled": true,
-
+  "explorer.confirmPasteNative": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.startupEditor": "none",
   "terminal.integrated.scrollback": 100000,
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // START: Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "chat.tools.autoApprove": true,
+  "chat.tools.terminal.autoApprove": {
+    "cd": true,
+    "ls": true,
+    "pwd": true,
+    "cat": true,
+    "less": true,
+    "tail": true,
+    "head": true,
+    "grep": true,
+    "find": true,
+    "man": true,
+    "echo": true,
+    "whoami": true,
+    "uname": true,
+    "date": true,
+    "mkdir": true,
+    "wc": true,
+    "sed": true,
+    "git status": true,
+    "git log": true,
+    "git diff": true,
+    "git checkout": true,
+    "git branch --show-current": true,
+    "git show": true,
+    "git add": true,
+    "git commit": true,
+    "cargo": true,
+    "docker compose": true
+  },
+  "chat.commandCenter.enabled": true,
+  "chat.agent.maxRequests": 100,
+  // END: Copilot
+
+  // START: Languages
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -57,8 +70,9 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "security.workspace.trust.untrustedFiles": "open",
+  // END: Languages
 
+  // START: Theme
   "editor.semanticHighlighting.enabled": true,
   "editor.semanticTokenColorCustomizations": {
     "rules": {
@@ -2101,12 +2115,15 @@
     "debugExceptionWidget.background": "#000000bf",
     "debugExceptionWidget.border": "#ffa500"
   },
-
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "catppuccin-latte",
+  // END: Theme
 
+  // START: Git
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.ignoreTrimWhitespace": false
+  // END: Git
 }
