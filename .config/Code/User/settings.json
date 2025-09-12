@@ -15,7 +15,6 @@
     "markdown": true,
     "scminput": false
   },
-  "chat.tools.autoApprove": true,
   "chat.tools.terminal.autoApprove": {
     "cd": true,
     "ls": true,
@@ -43,10 +42,15 @@
     "git add": true,
     "git commit": true,
     "cargo": true,
-    "docker compose": true
+    "docker compose": true,
+    "tofu plan": true,
+    "tofu fmt": true,
+    "tofu validate": true
   },
   "chat.commandCenter.enabled": true,
   "chat.agent.maxRequests": 100,
+  "chat.editing.confirmEditRequestRemoval": false,
+  "chat.agent.thinkingStyle": "expanded",
   // END: Copilot
 
   // START: Languages
@@ -2125,6 +2129,10 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "never",
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.blame.editorDecoration.enabled": true,
   // END: Git
+
+  "python.defaultInterpreterPath": "/bin/python3",
+  "chat.checkpoints.showFileChanges": true
 }
