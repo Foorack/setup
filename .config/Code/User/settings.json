@@ -15,6 +15,7 @@
     "markdown": true,
     "scminput": false
   },
+  "chat.tools.terminal.enableAutoApprove": true,
   "chat.tools.terminal.autoApprove": {
     "cd": true,
     "ls": true,
@@ -50,7 +51,6 @@
   "chat.commandCenter.enabled": true,
   "chat.agent.maxRequests": 100,
   "chat.editing.confirmEditRequestRemoval": false,
-  "chat.agent.thinkingStyle": "expanded",
   // END: Copilot
 
   // START: Languages
