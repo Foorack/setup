@@ -13,7 +13,7 @@
     "*": true,
     "plaintext": false,
     "markdown": true,
-    "scminput": false
+    "scminput": false,
   },
   "chat.tools.global.autoApprove": true,
   "chat.tools.terminal.autoApprove": {
@@ -46,38 +46,29 @@
     "docker compose": true,
     "tofu plan": true,
     "tofu fmt": true,
-    "tofu validate": true
+    "tofu validate": true,
   },
-  "chat.commandCenter.enabled": true,
+  "chat.agent.thinking.terminalTools": true,
   "chat.agent.maxRequests": 100,
   "chat.editing.confirmEditRequestRemoval": false,
+  "chat.instructionsFilesLocations": {
+    "AGENTS.md": true,
+  },
+  "chat.tools.terminal.outputLocation": "terminal",
+  "chat.viewSessions.orientation": "stacked",
   // END: Copilot
 
   // START: Languages
   "rust-analyzer.lens.implementations.enable": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[typescript][javascript][jsonc][css][html][json][dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[dockercompose]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers",
   },
+  "python.analysis.typeCheckingMode": "basic",
   // END: Languages
 
   // START: Theme
@@ -91,9 +82,6 @@
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "never",
   "diffEditor.ignoreTrimWhitespace": false,
-  "git.blame.editorDecoration.enabled": false,
+  "git.blame.editorDecoration.enabled": true,
   // END: Git
-
-  "python.defaultInterpreterPath": "/bin/python3",
-  "chat.checkpoints.showFileChanges": true
 }
