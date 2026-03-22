@@ -55,20 +55,18 @@
     "AGENTS.md": true,
   },
   "chat.tools.terminal.outputLocation": "terminal",
-  "chat.viewSessions.orientation": "stacked",
   // END: Copilot
 
   // START: Languages
   "rust-analyzer.lens.implementations.enable": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
   "[typescript][javascript][jsonc][css][html][json][dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[dockercompose]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-containers",
   },
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.typeCheckingMode": "standard",
   // END: Languages
 
   // START: Theme
@@ -82,6 +80,11 @@
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "never",
   "diffEditor.ignoreTrimWhitespace": false,
-  "git.blame.editorDecoration.enabled": true,
+  "git.blame.editorDecoration.enabled": false,
+  "diffEditor.maxComputationTime": 0,
+  "chat.viewSessions.orientation": "stacked",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
   // END: Git
 }
