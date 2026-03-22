@@ -55,12 +55,13 @@
     "AGENTS.md": true,
   },
   "chat.tools.terminal.outputLocation": "terminal",
+  "chat.viewSessions.orientation": "stacked",
   // END: Copilot
 
   // START: Languages
   "rust-analyzer.lens.implementations.enable": false,
   "js/ts.updateImportsOnFileMove.enabled": "always",
-  "[typescript][javascript][jsonc][css][html][json][dockercompose]": {
+  "[typescript][javascript][jsonc][css][html][json][dockercompose][typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[dockercompose]": {
@@ -75,16 +76,11 @@
   // END: Theme
 
   // START: Git
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  "git.openRepositoryInParentFolders": "never",
   "diffEditor.ignoreTrimWhitespace": false,
-  "git.blame.editorDecoration.enabled": false,
-  "diffEditor.maxComputationTime": 0,
-  "chat.viewSessions.orientation": "stacked",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
+  "git.autofetch": true,
+  "git.blame.editorDecoration.enabled": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
   // END: Git
 }
