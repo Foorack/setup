@@ -49,25 +49,25 @@
     "tofu validate": true,
   },
   "chat.agent.thinking.terminalTools": true,
-  "chat.agent.maxRequests": 100,
+  "chat.agent.maxRequests": 300,
   "chat.editing.confirmEditRequestRemoval": false,
   "chat.instructionsFilesLocations": {
     "AGENTS.md": true,
   },
   "chat.tools.terminal.outputLocation": "terminal",
   "chat.viewSessions.orientation": "stacked",
+  "chat.tips.enabled": false,
   // END: Copilot
 
   // START: Languages
   "rust-analyzer.lens.implementations.enable": false,
   "js/ts.updateImportsOnFileMove.enabled": "always",
   "[typescript][javascript][jsonc][css][html][json][dockercompose][typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[dockercompose]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-containers",
   },
-  "python.analysis.typeCheckingMode": "standard",
   // END: Languages
 
   // START: Theme
